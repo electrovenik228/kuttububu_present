@@ -109,6 +109,10 @@ b{font-weight:700}
 .grid-3{grid-template-columns:1fr}
 @media (min-width:600px){.grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1024px){.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.grid-4{grid-template-columns:1fr}
+@media (min-width:600px){.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1024px){.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (min-width:600px){.grid-4 .pain--note{grid-column:span 2}}
 
 /* ---------- Фото ---------- */
 .photo{position:relative;overflow:hidden;border-radius:var(--r);background:var(--ph);border:2px dashed var(--num)}
@@ -142,6 +146,7 @@ b{font-weight:700}
 .cover__dash{font-size:.5em;vertical-align:.38em}
 .cover__script{color:var(--ink)!important;font-size:clamp(40px,7vw,140px);line-height:1}
 .cover__photo{position:relative;z-index:3;width:70vw;max-width:460px;aspect-ratio:600/930;margin-top:-40px}
+@media (max-width:1023.98px){.cover__photo.is-loaded{margin-top:calc(clamp(56px,13vw,200px) * -1.75 - clamp(18px,3vw,32px))}}
 .cover__photo:not(.is-loaded){z-index:1}
 .cover__lead{font-size:var(--fs-lead);line-height:1.4;max-width:34ch;color:var(--ink);position:relative;z-index:4}
 .cover__foot{display:flex;flex-direction:column;align-items:center;gap:6px;font-weight:700;font-size:clamp(16px,1.5vw,22px);color:var(--bordo);position:relative;z-index:4}
@@ -232,26 +237,20 @@ b{font-weight:700}
 @media (min-width:1100px){.speakers{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* ---------- 12. Подарки ---------- */
-.gifts{list-style:none;padding:0;display:grid;gap:clamp(14px,1.6vw,22px) clamp(24px,4vw,56px);grid-template-columns:1fr}
+.gifts{list-style:none;padding:0;display:grid;gap:var(--gap);grid-template-columns:1fr}
 @media (min-width:900px){.gifts{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.gift{display:flex;gap:clamp(12px,1.4vw,20px);align-items:flex-start;font-size:clamp(16px,1.6vw,24px);line-height:1.4}
-.gift svg{flex:none;width:clamp(28px,2.4vw,40px);height:auto;margin-top:-.1em;margin-inline:calc((clamp(52px,4.4vw,64px) - clamp(28px,2.4vw,40px)) / 2)}
-.gift--person{align-items:center}
-.gift__ava{flex:none;width:clamp(52px,4.4vw,64px);height:clamp(52px,4.4vw,64px);border-radius:50%;object-fit:cover;border:3px solid var(--bordo);background:var(--ph)}
-.total{margin-top:var(--head-gap);display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
-.total .h3{font-size:clamp(32px,4.2vw,64px);line-height:1;color:var(--milk)}
-.total p{font-weight:600;color:var(--rose);font-size:var(--fs-lead);line-height:1.35}
-@media (min-width:768px){
- .total{flex-direction:row;justify-content:space-between;text-align:right;gap:24px}
- .total p{max-width:22ch}
-}
+.gift{display:flex;gap:clamp(12px,1.4vw,20px);align-items:flex-start;margin:0;font-size:clamp(16px,1.6vw,24px);line-height:1.4}
+.gift svg{flex:none;width:clamp(28px,2.4vw,40px);height:auto;margin-top:-.1em}
+.gift--secret{grid-column:1 / -1;align-items:center}
 
 /* ---------- 13. Результат ---------- */
 .results{display:grid;gap:var(--gap);grid-template-columns:1fr}
 @media (min-width:600px){.results{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1024px){.results{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.result{font-weight:600;font-size:clamp(17px,1.5vw,22px);line-height:1.35;border-radius:var(--r-sm)}
-.result--note{display:flex;align-items:center;font-family:var(--f-script);font-weight:400;font-size:clamp(28px,2.6vw,40px);line-height:1.15;border-radius:var(--r-sm)}
+.result{display:flex;align-items:center;min-height:clamp(96px,9vw,140px);font-weight:600;font-size:clamp(17px,1.5vw,22px);line-height:1.35;border-radius:var(--r-sm)}
+.result{padding:clamp(22px,1.8vw,32px)}
+.result p,.result--note p{min-width:0;text-wrap:balance;hyphens:auto;overflow-wrap:break-word}
+.result--note{display:flex;align-items:center;min-height:clamp(96px,9vw,140px);font-family:var(--f-script);font-weight:400;font-size:clamp(28px,2.6vw,40px);line-height:1.15;border-radius:var(--r-sm)}
 
 /* ---------- 14. Формат ---------- */
 .stats{display:grid;gap:clamp(20px,3vw,48px);grid-template-columns:1fr;margin-bottom:var(--head-gap)}
@@ -283,11 +282,11 @@ b{font-weight:700}
 .final__body{display:flex;flex-direction:column;gap:clamp(16px,2.2vw,32px);align-items:flex-start}
 .final__title{font-size:clamp(48px,8vw,120px);line-height:.95}
 .final__sub{font-weight:600;font-size:clamp(20px,2.4vw,40px);line-height:1.3;color:var(--rose)}
-.final__script{font-family:var(--f-script);font-size:clamp(36px,4.5vw,80px);line-height:1.1;color:var(--milk)}
-.final{align-items:end}
+.final__script{font-family:var(--f-script);font-size:clamp(28px,3.2vw,52px);line-height:1.15;color:var(--milk)}
+.final__cta{font-weight:700;font-size:clamp(18px,1.8vw,26px);line-height:1.35;color:var(--milk);margin-top:calc(-1 * clamp(4px,1vw,16px))}
+.final{align-items:center}
 .final__body{align-self:center}
-.final__photo{width:80vw;max-width:480px;margin-inline:auto;aspect-ratio:1717/2363}
-.final__photo.is-loaded{margin-bottom:calc(-1 * var(--pad-y))}
+.final__photo{width:80vw;max-width:480px;margin-inline:auto;aspect-ratio:1024/1536;align-self:center}
 .final__photo.is-loaded img{-webkit-mask-image:linear-gradient(to right,transparent 0,#000 8%,#000 86%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 8%,#000 86%,transparent 100%)}
 #final{overflow:hidden}
 .final .pill{width:100%;text-align:center;font-size:clamp(17px,1.7vw,28px)}
@@ -368,10 +367,11 @@ b{font-weight:700}
 <section class="block bg-milk reveal" id="pains">
  <div class="wrap">
   <div class="head"><h2 class="h2">Знакомо?</h2></div>
-  <div class="grid grid-3">
+  <div class="grid grid-4">
    <div class="card card--bordo pain"><p>Видео красивые, но не залетают, и блог не приносит денег</p></div>
    <div class="card card--bordo pain"><p>Давно хочешь вести блог, но стесняешься камеры</p></div>
-   <div class="card card--bordo pain"><p>Ведёшь чужие аккаунты, а свой чек годами не растёт</p></div>
+   <div class="card card--bordo pain"><p>Ведёшь чужие аккаунты, а свой блог так и не начала. И чек годами не растёт</p></div>
+   <div class="card card--bordo pain"><p>Хочешь вести блог как настоящий блогер, но не знаешь, с чего начать</p></div>
    <div class="card card--bordo pain"><p>Есть бизнес, но о тебе как о личности никто не знает</p></div>
    <div class="card card--bordo pain"><p>Хочешь свой доход, но не понимаешь, с чего начать</p></div>
    <div class="card card--line pain pain--note"><p>Если хотя бы один пункт про тебя, это обучение для тебя</p></div>
@@ -388,7 +388,7 @@ b{font-weight:700}
   </div>
   <div class="grid grid-3">
    <div class="card card--milk who"><h3 class="h3">Эксперт</h3><p>Знаешь своё дело, но о тебе никто не знает</p></div>
-   <div class="card card--milk who"><h3 class="h3">Специалист</h3><p>СММ, мобилограф или монтажёр, который хочет поднять чек и вести свой блог</p></div>
+   <div class="card card--milk who"><h3 class="h3">Специалист</h3><p>Маркетолог, СММ, продюсер, мобилограф или эксперт в любой сфере. Хочешь поднять чек и вести свой блог</p></div>
    <div class="card card--milk who"><h3 class="h3">Предприниматель</h3><p>Бизнес есть, а личного бренда нет</p></div>
    <div class="card card--milk who"><h3 class="h3">Домохозяйка или мама</h3><p>Хочешь свой доход и реализацию</p></div>
    <div class="card card--milk who"><h3 class="h3">Красивые видео</h3><p>Снимаешь красиво, но это пока не приносит результата</p></div>
@@ -433,10 +433,9 @@ b{font-weight:700}
  </div>
 </section>
 
-<!-- 7. Мой кейс -->
+<!-- 7. Кейс -->
 <section class="block bg-bordo reveal" id="case">
  <div class="wrap stack">
-  <p class="script">Мой кейс</p>
   <h2 class="num case__num"><span>2 000 →</span> <span>11 000</span></h2>
   <p class="case__sub soft">подписчиков за лето. Без единой продажи. Только на своей личности.</p>
   <div class="card card--milk">
@@ -612,21 +611,51 @@ b{font-weight:700}
    </article>
    <article class="card--milk speaker" role="listitem">
     <figure class="photo"><img src="assets/img/speaker-sezim-video.webp" alt="Сезим, видеограф" loading="lazy"><span class="photo__ph">[Фото: Сезим, видеограф]</span></figure>
-    <p class="script">Видеограф</p>
+    <p class="script">Видеограф и маркетолог в кино</p>
     <h3 class="h3">Сезим</h3>
-    <p>Менеджер по блогерам в кино, моушн-дизайнер и монтажёр. Расскажет, с какими блогерами сотрудничать и на что делать упор.</p>
+    <p>Менеджер по блогерам в кино, моушн-дизайнер и монтажёр. Откроет, по каким признакам выбирают блогеров для коллабораций, и расскажет, как упаковать себя, чтобы тебя звали на премьеры и закрытые мероприятия.</p>
    </article>
    <article class="card--milk speaker" role="listitem">
     <figure class="photo"><img src="assets/img/speaker-sezim-marketing.webp" alt="Сезим, маркетолог" loading="lazy"><span class="photo__ph">[Фото: Сезим, маркетолог]</span></figure>
     <p class="script">Маркетолог</p>
     <h3 class="h3">Сезим</h3>
-    <p>На рынке с 2019 года, владелица магазина одежды и магазина постельного белья.</p>
+    <p>На рынке с 2019 года. Владелица магазина одежды и магазина постельного белья. С нуля сама выстроила систему внутри бизнеса, сделала продающий маркетинг и за короткое время вышла на большой доход. Подробно расскажет на уроке.</p>
    </article>
    <article class="card--milk speaker" role="listitem">
     <figure class="photo photo--baga"><img src="assets/img/speaker-baga.webp" alt="BAGA" loading="lazy"><span class="photo__ph">[Фото: BAGA]</span></figure>
     <p class="script">ИИ-видео</p>
     <h3 class="h3">BAGA</h3>
-    <p>Создание видео с помощью искусственного интеллекта.</p>
+    <p>Продюсер и контент-креатор, автор своего обучения по ИИ. Создаёт продающие видео, сценарии и реалистичные ролики с помощью искусственного интеллекта. Расскажет, как применить ИИ в твоём блоге.</p>
+   </article>
+   <article class="card--milk speaker" role="listitem">
+    <figure class="photo"><img src="assets/img/speaker-indira.webp" alt="Индира" loading="lazy"><span class="photo__ph">[Фото: Индира]</span></figure>
+    <p class="script">Фотограф, модель, продюсер</p>
+    <h3 class="h3">Индира</h3>
+    <p>Эксперт в своей сфере. Научит позировать и уверенно чувствовать себя в кадре и за кадром. Проведёт личную съёмку, и ты увидишь изнутри, как проходят профессиональные фотосессии.</p>
+   </article>
+   <article class="card--milk speaker" role="listitem">
+    <figure class="photo"><img src="assets/img/speaker-medina.webp" alt="Медина" loading="lazy"><span class="photo__ph">[Фото: Медина]</span></figure>
+    <p class="script">Бьюти-съёмка</p>
+    <h3 class="h3">Медина</h3>
+    <p>Визажист и стилист. Вместе с ней проведём бьюти-съёмку с эффектным переходом: макияж, причёска и готовый контент для твоего блога.</p>
+   </article>
+   <article class="card--milk speaker" role="listitem">
+    <figure class="photo"><img src="assets/img/speaker-bayelya.webp" alt="Байэля" loading="lazy"><span class="photo__ph">[Фото: Байэля]</span></figure>
+    <p class="script">Хореограф и маркетолог</p>
+    <h3 class="h3">Байэля</h3>
+    <p>Известный хореограф, владеет множеством танцевальных стилей. Проведёт мастер-класс по танцам специально для нас: прочувствуем свободу тела и женскую энергию, раскрепостимся и разрешим себе быть смелой и дерзкой.</p>
+   </article>
+   <article class="card--milk speaker" role="listitem">
+    <figure class="photo"><img src="assets/img/speaker-daniyar.webp" alt="Данияр" loading="lazy"><span class="photo__ph">[Фото: Данияр]</span></figure>
+    <p class="script">Быстрый рост аудитории</p>
+    <h3 class="h3">Данияр</h3>
+    <p>Контент-мейкер, продюсер и блогер, 50 тыс. подписчиков в Instagram. Поделится своими лайфхаками, как быстро набрать аудиторию.</p>
+   </article>
+   <article class="card--milk speaker" role="listitem">
+    <figure class="photo"><img src="assets/img/speaker-daniel.webp" alt="Даниэль" loading="lazy"><span class="photo__ph">[Фото: Даниэль]</span></figure>
+    <p class="script">Монтаж и цвет</p>
+    <h3 class="h3">Даниэль</h3>
+    <p>Мобилограф. Проведёт урок по монтажу и цветокоррекции: как сделать видео красивым и цельным прямо на телефоне.</p>
    </article>
   </div>
   <p class="speakers-note soft">А ещё вдохновляющие личности, которые расскажут свой путь и поделятся лайфхаками. Гости будут добавляться по ходу обучения.</p>
@@ -641,17 +670,12 @@ b{font-weight:700}
    <h2 class="h2">Входит в стоимость обучения</h2>
   </div>
   <ul class="gifts" role="list">
-   <li class="gift gift--person"><img class="gift__ava" src="assets/img/gift-indira.webp" alt="Индира" width="64" height="64" loading="lazy"><p><b>Личная фотосессия с Индирой:</b> стрит, студия и другие форматы</p></li>
-   <li class="gift gift--person"><img class="gift__ava" src="assets/img/gift-medina.webp" alt="Медина" width="64" height="64" loading="lazy"><p><b>Бьюти-съёмка с Мединой:</b> макияж, причёска и съёмка</p></li>
-   <li class="gift gift--person"><img class="gift__ava" src="assets/img/gift-bayelya.webp" alt="Байэль" width="64" height="64" loading="lazy"><p><b>Мастер-класс по танцам от Байэля:</b> женская энергия и свобода в теле</p></li>
-   <li class="gift gift--person"><img class="gift__ava" src="assets/img/gift-aida.webp" alt="Айда" width="64" height="64" loading="lazy"><p><b>Трансформационная игра «Главный герой»</b> с психологом Айдой</p></li>
-   <li class="gift"><svg viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p><b>Выездные съёмки:</b> отдыхаем на красивых локациях и уезжаем с готовым контентом</p></li>
-   <li class="gift"><svg viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p><b>Коллаборации с брендами</b> косметики, одежды и не только, прямо на обучении</p></li>
-   <li class="gift"><svg viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6L12 16.8 6.6 19.6l1.1-6L3.2 9.4l6.1-.8z"/></svg><p><b>+ секретный подарок,</b> о котором узнаете на старте</p></li>
+   <li class="card card--line gift"><svg viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p><b>Трансформационная игра «Главный герой»</b> с психологом Айдой</p></li>
+   <li class="card card--line gift"><svg viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p><b>Выездные съёмки:</b> отдыхаем на красивых локациях и уезжаем с готовым контентом</p></li>
+   <li class="card card--line gift"><svg viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p><b>Коллаборации с брендами</b> косметики, одежды и не только, прямо на обучении</p></li>
+   <li class="card card--line gift"><svg viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p><b>Арт-вечер при свечах:</b> тёплая атмосфера, творчество и время для себя</p></li>
+   <li class="card card--bordo gift gift--secret"><svg viewBox="0 0 24 24" fill="none" stroke="#FBF8F6" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6L12 16.8 6.6 19.6l1.1-6L3.2 9.4l6.1-.8z"/></svg><p><b>Секретный подарок,</b> о котором узнаете на старте</p></li>
   </ul>
-  <div class="card card--bordo total">
-   <p class="h3">Более 30 000 сом</p>
-   <p>подарков уже внутри обучения</p>
   </div>
  </div>
 </section>
@@ -701,7 +725,7 @@ b{font-weight:700}
  <div class="wrap price">
   <p class="script">Стоимость обучения</p>
   <h2 class="num">100 000 сом</h2>
-  <p class="pill pill--light">Включая подарки на сумму более 30 000 сом</p>
+  <p class="pill pill--light">Фотосессия, бьюти-съёмка, мастер-класс по танцам и подарки уже включены</p>
  </div>
 </section>
 
@@ -728,7 +752,8 @@ b{font-weight:700}
   <div class="final__body">
    <h2 class="h2 final__title">7 девушек<br>уже с нами</h2>
    <p class="final__sub">Старт 17 октября. Присоединяйся.</p>
-   <p class="final__script">Твоя главная роль начинается сейчас</p>
+   <p class="final__script">Мечтать о блоге можно годами или начать вести его уже сегодня. Ведь от жизни твоей мечты тебя отделяет только бездействие.</p>
+   <p class="final__cta">Начни сиять. Жду именно тебя 💋</p>
    <a class="pill pill--light" href="https://instagram.com/kuttububu" target="_blank" rel="noopener">Instagram: @kuttububu</a>
   </div>
   <figure class="photo photo--cutout photo--on-bordo final__photo">
