@@ -146,7 +146,12 @@ b{font-weight:700}
 .cover__dash{font-size:.5em;vertical-align:.38em}
 .cover__script{color:var(--ink)!important;font-size:clamp(40px,7vw,140px);line-height:1}
 .cover__photo{position:relative;z-index:3;width:70vw;max-width:460px;aspect-ratio:600/930;margin-top:-40px}
-@media (max-width:1023.98px){.cover__photo.is-loaded{margin-top:calc(clamp(56px,13vw,200px) * -1.75 - clamp(18px,3vw,32px))}}
+@media (max-width:1023.98px){
+ /* Заголовок за фото на уровне пояса (~48% высоты фото) */
+ .cover > .wrap{position:relative}
+ .cover__main{position:absolute;left:0;right:0;top:calc(min(70vw,460px) * 930 / 600 * .48);transform:translateY(-62%);z-index:2}
+ .cover__photo{margin-top:0}
+}
 .cover__photo:not(.is-loaded){z-index:1}
 .cover__lead{font-size:var(--fs-lead);line-height:1.4;max-width:34ch;color:var(--ink);position:relative;z-index:4}
 .cover__foot{display:flex;flex-direction:column;align-items:center;gap:6px;font-weight:700;font-size:clamp(16px,1.5vw,22px);color:var(--bordo);position:relative;z-index:4}
