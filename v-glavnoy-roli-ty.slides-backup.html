@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>В главной роли — ты — Куттубубу</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@400..800&family=Oswald:wght@400..700&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#2A0A10;overflow:hidden}
+ul{padding-left:1.1em} li{margin:0 0 .35em}
+h1,h2,h3{font-weight:700}
+#stage{position:fixed;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center}
+.slide{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+.slide.on{opacity:1;visibility:visible}
+img:not([src]){display:block}
+#bar{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:center;align-items:center;gap:14px;padding:10px;font:600 14px Montserrat,Arial,sans-serif;color:#F2DADD;opacity:0;transition:opacity .3s}
+body:hover #bar{opacity:1}
+#bar button{background:#6E0F1F;color:#FBF8F6;border:0;border-radius:999px;width:36px;height:36px;font-size:18px;cursor:pointer}
+#bar button:focus-visible{outline:2px solid #FBF8F6;outline-offset:2px}
+@media print{
+ @page{size:1920px 1080px;margin:0}
+ html,body{overflow:visible;height:auto;background:none}
+ #stage{position:static;transform:none!important;width:auto;height:auto}
+ .slide{position:relative;opacity:1;visibility:visible;page-break-after:always;break-after:page}
+ #bar{display:none}
+}
+@media (prefers-reduced-motion:reduce){.slide{transition:none}}
+</style>
+</head>
+<body>
+<div id="stage">
+<section class="slide" id="cover" data-transition="fade" style="background:#FBF8F6;color:#6E0F1F;font-family:'Montserrat', Arial, sans-serif;padding:96px 128px;display:flex;flex-direction:column;justify-content:space-between">
+<img alt="Фото Куттубубу без фона" style="position:absolute;left:1160px;top:150px;width:600px;height:930px;object-fit:cover;background:#EBDDDF;border:2px dashed #B98A92">
+<p style="position:absolute;left:1160px;top:580px;width:600px;font-size:26px;text-align:center;color:#8A6A70">[Фото Куттубубу без фона]</p>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center">
+<p style="font-size:28px;font-weight:800;letter-spacing:4px;text-transform:uppercase">Куттубубу</p>
+<div style="display:flex;flex-direction:row;gap:56px">
+<p style="font-size:26px;font-weight:700;letter-spacing:3px;text-transform:uppercase">Программа</p>
+<p style="font-size:26px;font-weight:700;letter-spacing:3px;text-transform:uppercase">Спикеры</p>
+<p style="font-size:26px;font-weight:700;letter-spacing:3px;text-transform:uppercase">Подарки</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:0px">
+<h1 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:210px;font-weight:700;line-height:0.9;text-transform:uppercase;color:#6E0F1F">В главной</h1>
+<h1 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:210px;font-weight:700;line-height:0.9;text-transform:uppercase;color:#6E0F1F">роли — ты</h1>
+<p style="font-size:32px;line-height:1.4;color:#2A0A10;width:900px;padding:40px 0px 0px 0px">Офлайн-обучение для девушек, которые хотят заявить о себе в Instagram и зарабатывать на блоге</p>
+</div>
+<p style="position:absolute;left:520px;top:470px;width:640px;font-family:'Marck Script', 'Brush Script MT', cursive;font-size:140px;line-height:1;color:#2A0A10;transform:rotate(-8deg)">Обучение</p>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center">
+<p style="font-size:28px;font-weight:700">Старт 17 октября</p>
+<p style="font-size:28px;font-weight:800;letter-spacing:2px">@KUTTUBUBU</p>
+</div>
+</section>
+<section class="slide" id="idea" data-transition="fade" style="background:#6E0F1F;color:#FBF8F6;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:80px;line-height:1;color:#F2DADD">Главная мысль</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:150px;font-weight:700;line-height:0.95;text-transform:uppercase;color:#FBF8F6">Твой блог — это<br>фильм о тебе</h2>
+<p style="font-size:36px;line-height:1.45;width:1300px;color:#F2DADD">Каждый день ты решаешь, будешь ли в нём главной героиней или массовкой. На этом обучении ты выходишь на главную роль: со своим образом, своей историей и своими деньгами.</p>
+</section>
+<section class="slide" id="pains" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:120px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">Знакомо?</h2>
+<div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:28px">
+<div style="display:flex;flex-direction:column;background:#6E0F1F;padding:40px;border-radius:28px"><p style="font-size:32px;font-weight:600;line-height:1.35;color:#FBF8F6">Видео красивые, но не залетают, и блог не приносит денег</p></div>
+<div style="display:flex;flex-direction:column;background:#6E0F1F;padding:40px;border-radius:28px"><p style="font-size:32px;font-weight:600;line-height:1.35;color:#FBF8F6">Давно хочешь вести блог, но стесняешься камеры</p></div>
+<div style="display:flex;flex-direction:column;background:#6E0F1F;padding:40px;border-radius:28px"><p style="font-size:32px;font-weight:600;line-height:1.35;color:#FBF8F6">Ведёшь чужие аккаунты, а свой чек годами не растёт</p></div>
+<div style="display:flex;flex-direction:column;background:#6E0F1F;padding:40px;border-radius:28px"><p style="font-size:32px;font-weight:600;line-height:1.35;color:#FBF8F6">Есть бизнес, но о тебе как о личности никто не знает</p></div>
+<div style="display:flex;flex-direction:column;background:#6E0F1F;padding:40px;border-radius:28px"><p style="font-size:32px;font-weight:600;line-height:1.35;color:#FBF8F6">Хочешь свой доход, но не понимаешь, с чего начать</p></div>
+<div style="display:flex;flex-direction:column;justify-content:center;background:#FBF8F6;padding:40px;border-radius:28px;border:3px solid #6E0F1F"><p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:44px;line-height:1.2;color:#6E0F1F">Если хотя бы один пункт про тебя, это обучение для тебя</p></div>
+</div>
+</section>
+<section class="slide" id="for-whom" data-transition="fade" style="background:#6E0F1F;color:#FBF8F6;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:64px;line-height:1;color:#F2DADD">Для кого</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:88px;font-weight:700;line-height:1;text-transform:uppercase">Это обучение для тебя, если ты…</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:24px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#FBF8F6;padding:32px 36px;border-radius:24px"><h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:40px;font-weight:700;text-transform:uppercase;color:#6E0F1F">Эксперт</h3><p style="font-size:26px;line-height:1.4;color:#6E5157">Знаешь своё дело, но о тебе никто не знает</p></div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#FBF8F6;padding:32px 36px;border-radius:24px"><h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:40px;font-weight:700;text-transform:uppercase;color:#6E0F1F">Специалист</h3><p style="font-size:26px;line-height:1.4;color:#6E5157">СММ, мобилограф или монтажёр, который хочет поднять чек и вести свой блог</p></div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#FBF8F6;padding:32px 36px;border-radius:24px"><h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:40px;font-weight:700;text-transform:uppercase;color:#6E0F1F">Предприниматель</h3><p style="font-size:26px;line-height:1.4;color:#6E5157">Бизнес есть, а личного бренда нет</p></div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#FBF8F6;padding:32px 36px;border-radius:24px"><h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:40px;font-weight:700;text-transform:uppercase;color:#6E0F1F">Домохозяйка или мама</h3><p style="font-size:26px;line-height:1.4;color:#6E5157">Хочешь свой доход и реализацию</p></div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#FBF8F6;padding:32px 36px;border-radius:24px"><h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:40px;font-weight:700;text-transform:uppercase;color:#6E0F1F">Красивые видео</h3><p style="font-size:26px;line-height:1.4;color:#6E5157">Снимаешь красиво, но это пока не приносит результата</p></div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#FBF8F6;padding:32px 36px;border-radius:24px"><h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:40px;font-weight:700;text-transform:uppercase;color:#6E0F1F">Стеснительная</h3><p style="font-size:26px;line-height:1.4;color:#6E5157">Хочешь проявляться, но зажата и боишься камеры</p></div>
+</div>
+</section>
+<section class="slide" id="not-for-all" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:140px;font-weight:700;line-height:0.95;text-transform:uppercase;color:#6E0F1F">Это обучение<br>не для всех</h2>
+<p style="font-size:38px;font-weight:600;line-height:1.4;width:1400px">Оно для тех, кто готов к масштабу, к большому вниманию и к росту.</p>
+<div style="display:flex;flex-direction:column;gap:16px;background:#6E0F1F;padding:44px 52px;border-radius:28px;width:1400px">
+<p style="font-size:32px;line-height:1.45;color:#FBF8F6">Если ты ещё не решила, хочешь ли вести блог, лучше не приходи: не трать ни своё, ни моё время.</p>
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:52px;line-height:1.1;color:#F2DADD">Здесь растут те, кто уже сделал выбор</p>
+</div>
+</section>
+<section class="slide" id="about" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:row;gap:80px;align-items:center">
+<img alt="Фото Куттубубу" style="width:600px;height:824px;object-fit:cover;background:#EBDDDF;border:2px dashed #B98A92;border-radius:28px">
+<p style="position:absolute;left:128px;top:520px;width:600px;font-size:26px;text-align:center;color:#8A6A70">[Фото Куттубубу]</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:24px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:64px;line-height:1;color:#6E0F1F">Обо мне</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:140px;font-weight:700;line-height:0.95;text-transform:uppercase;color:#6E0F1F">Куттубубу</h2>
+<p style="font-size:28px;font-weight:700;letter-spacing:1px;color:#2A0A10">Маркетолог · Продюсер · Предприниматель · Блогер</p>
+<ul style="font-size:28px;line-height:1.5;color:#6E5157">
+<li>6 лет в маркетинге: продвигала компании, фильмы и себя</li>
+<li>Создала бизнес арт-терапии и заработала на нём $50 000</li>
+<li>Спикер на обучениях по маркетингу и мобилографии с 2023 года</li>
+<li>Замужем, скоро стану мамой</li>
+</ul>
+<div style="display:flex;flex-direction:column;background:#6E0F1F;padding:32px 40px;border-radius:24px">
+<p style="font-size:30px;font-weight:600;line-height:1.4;color:#FBF8F6">Мои цели амбициозные: масштабироваться на весь мир и собрать миллионную аудиторию.</p>
+</div>
+</div>
+</section>
+<section class="slide" id="case" data-transition="fade" style="background:#6E0F1F;color:#FBF8F6;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:36px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:72px;line-height:1;color:#F2DADD">Мой кейс</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:220px;font-weight:700;line-height:0.95;color:#FBF8F6">2 000 → 11 000</h2>
+<p style="font-size:40px;font-weight:600;line-height:1.35;color:#F2DADD">подписчиков за лето. Без единой продажи. Только на своей личности.</p>
+<div style="display:flex;flex-direction:column;background:#FBF8F6;padding:40px 52px;border-radius:28px;width:1400px">
+<p style="font-size:38px;font-style:italic;font-weight:600;line-height:1.4;color:#6E0F1F">«Я использовала лишь 10% того, что знаю. На этом обучении я дам вам все 100%»</p>
+</div>
+</section>
+<section class="slide" id="what" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:72px;line-height:1;color:#2A0A10">Что такое</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:170px;font-weight:700;line-height:0.92;text-transform:uppercase;color:#6E0F1F">В главной роли — ты</h2>
+<p style="font-size:36px;line-height:1.45;width:1350px;color:#6E5157">Месяц офлайн-обучения, где ты создаёшь свой образ, свой блог и свой доход. Всё, что изучаем, сразу практикуем. А я как наставник веду каждую к её цели.</p>
+<div style="display:flex;flex-direction:row;gap:16px">
+<p style="font-size:28px;font-weight:700;background:#6E0F1F;color:#FBF8F6;padding:14px 32px;border-radius:999px">Офлайн</p>
+<p style="font-size:28px;font-weight:700;background:#6E0F1F;color:#FBF8F6;padding:14px 32px;border-radius:999px">1 месяц · 20 уроков</p>
+<p style="font-size:28px;font-weight:700;color:#6E0F1F;border:3px solid #6E0F1F;padding:11px 29px;border-radius:999px">Теория сразу в практику</p>
+</div>
+</section>
+<section class="slide" id="tracks" data-transition="fade" style="background:#6E0F1F;color:#FBF8F6;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:72px;line-height:1;color:#F2DADD">Твой путь</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:110px;font-weight:700;line-height:1;text-transform:uppercase">Выбираешь свой трек</h2>
+<p style="font-size:32px;line-height:1.4;color:#F2DADD">На старте разбираем твою цель, и ты идёшь своим путём</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBF8F6;padding:44px;border-radius:28px"><h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:64px;font-weight:700;text-transform:uppercase;color:#6E0F1F">Блогер</h3><p style="font-size:28px;line-height:1.4;color:#6E5157">Растишь свой блог и монетизируешь его</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBF8F6;padding:44px;border-radius:28px"><h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:64px;font-weight:700;text-transform:uppercase;color:#6E0F1F">Специалист</h3><p style="font-size:28px;line-height:1.4;color:#6E5157">Осваиваешь профессию в Instagram и поднимаешь чек</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBF8F6;padding:44px;border-radius:28px"><h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:64px;font-weight:700;text-transform:uppercase;color:#6E0F1F">Бизнес</h3><p style="font-size:28px;line-height:1.4;color:#6E5157">Строишь личный бренд, который приводит клиентов в твоё дело</p></div>
+</div>
+</section>
+<section class="slide" id="program-1" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:end">
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:96px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">Программа</h2>
+<p style="font-size:28px;font-weight:700;color:#6E5157">9 модулей · 20 уроков · 1/5</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFDFC;padding:40px 44px;border-radius:28px;border:3px solid #6E0F1F">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:32px;font-weight:700;color:#B98A92">01</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-transform:uppercase;color:#6E0F1F">Мышление: блог как часть твоей жизни</h3>
+<ul style="font-size:24px;line-height:1.4;color:#6E5157">
+<li>Как занять своё место на огромной площадке и перестать сравнивать себя с другими</li>
+<li>Система ведения блога без усложнения и выгорания: сколько времени на самом деле нужно и как встроить блог в обычный день</li>
+<li>Страх оценки и мнение окружающих: как перестать от них зависеть</li>
+</ul>
+<p style="font-size:24px;font-weight:700;line-height:1.4;color:#6E0F1F;border-top:2px solid #E6D5D8;padding:20px 0px 0px 0px">Результат: блог перестаёт быть стрессом и становится естественной частью твоей жизни.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#6E0F1F;padding:40px 44px;border-radius:28px">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:32px;font-weight:700;color:#C98F99">02</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-transform:uppercase;color:#FBF8F6">Позиционирование и личный бренд</h3>
+<ul style="font-size:24px;line-height:1.4;color:#F2DADD">
+<li>Распаковка личности: твоя история, ценности и сильные стороны</li>
+<li>Чем ты отличаешься от тысяч других блогеров и почему подписываются именно на тебя</li>
+<li>Смыслы, на которых строится доверие и лояльная аудитория</li>
+</ul>
+<p style="font-size:24px;font-weight:700;line-height:1.4;color:#FBF8F6;border-top:2px solid #8E3442;padding:20px 0px 0px 0px">Результат: чёткое понимание, кто ты в блоге и для кого.</p>
+</div>
+</div>
+</section>
+<section class="slide" id="program-2" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:end">
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:96px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">Программа</h2>
+<p style="font-size:28px;font-weight:700;color:#6E5157">9 модулей · 20 уроков · 2/5</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFDFC;padding:40px 44px;border-radius:28px;border:3px solid #6E0F1F">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:32px;font-weight:700;color:#B98A92">03</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-transform:uppercase;color:#6E0F1F">Авторский стиль и узнаваемость</h3>
+<ul style="font-size:24px;line-height:1.4;color:#6E5157">
+<li>Твой фирменный почерк: как ты говоришь, шутишь и подаёшь мысли</li>
+<li>Фирменные форматы и фишки, которые ассоциируются только с тобой</li>
+<li>Как брать тренды и делать их своими, а не копировать чужое</li>
+<li>Единый тон блога в сторис, рилс и постах</li>
+</ul>
+<p style="font-size:24px;font-weight:700;line-height:1.4;color:#6E0F1F;border-top:2px solid #E6D5D8;padding:20px 0px 0px 0px">Результат: тебя узнают в ленте с первой секунды.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#6E0F1F;padding:40px 44px;border-radius:28px">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:32px;font-weight:700;color:#C98F99">04</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-transform:uppercase;color:#FBF8F6">Уверенность и подача в кадре</h3>
+<ul style="font-size:24px;line-height:1.4;color:#F2DADD">
+<li>Как убрать зажимы и страх камеры</li>
+<li>Голос, мимика, интонация: как говорить, чтобы досматривали и слушали</li>
+<li>Харизма и женская энергия в кадре</li>
+</ul>
+<p style="font-size:24px;font-weight:700;line-height:1.4;color:#FBF8F6;border-top:2px solid #8E3442;padding:20px 0px 0px 0px">Результат: ты свободно говоришь на камеру и нравишься себе на видео.</p>
+</div>
+</div>
+</section>
+<section class="slide" id="program-3" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:end">
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:96px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">Программа</h2>
+<p style="font-size:28px;font-weight:700;color:#6E5157">9 модулей · 20 уроков · 3/5</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFDFC;padding:40px 44px;border-radius:28px;border:3px solid #6E0F1F">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:32px;font-weight:700;color:#B98A92">05</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-transform:uppercase;color:#6E0F1F">Маркетинг: рынок от и до</h3>
+<ul style="font-size:24px;line-height:1.4;color:#6E5157">
+<li>Как устроен рынок Instagram сегодня и куда он движется</li>
+<li>Целевая аудитория: кто твой зритель и клиент, что ему важно</li>
+<li>Анализ конкурентов и поиск своей ниши</li>
+<li>Стратегический маркетинг: фишки, на которых строится продвижение фильмов, брендов и личностей</li>
+</ul>
+<p style="font-size:24px;font-weight:700;line-height:1.4;color:#6E0F1F;border-top:2px solid #E6D5D8;padding:20px 0px 0px 0px">Результат: ты понимаешь рынок и создаёшь контент, который работает на цель, а не «в пустоту».</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#6E0F1F;padding:40px 44px;border-radius:28px">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:32px;font-weight:700;color:#C98F99">06</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-transform:uppercase;color:#FBF8F6">Контент, который смотрят и сохраняют</h3>
+<ul style="font-size:24px;line-height:1.4;color:#F2DADD">
+<li>Контент-план и рубрики на месяц вперёд</li>
+<li>Сторис, которые досматривают до конца и в которых вовлекаются</li>
+<li>Сценарии рилс и вирусные форматы: на чём держится внимание</li>
+<li>Продающие рилс для товарного бизнеса и экспертов</li>
+</ul>
+<p style="font-size:24px;font-weight:700;line-height:1.4;color:#FBF8F6;border-top:2px solid #8E3442;padding:20px 0px 0px 0px">Результат: система контента, которая растит охваты и доверие.</p>
+</div>
+</div>
+</section>
+<section class="slide" id="program-4" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:end">
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:96px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">Программа</h2>
+<p style="font-size:28px;font-weight:700;color:#6E5157">9 модулей · 20 уроков · 4/5</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFDFC;padding:40px 44px;border-radius:28px;border:3px solid #6E0F1F">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:32px;font-weight:700;color:#B98A92">07</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-transform:uppercase;color:#6E0F1F">Мобилография, монтаж и ИИ-видео</h3>
+<ul style="font-size:24px;line-height:1.4;color:#6E5157">
+<li>Все форматы съёмки, которые есть сейчас в интернете</li>
+<li>Свет, кадр, ракурсы и композиция на телефон</li>
+<li>Монтаж, который удерживает внимание до последней секунды</li>
+<li>Создание видео с помощью искусственного интеллекта</li>
+</ul>
+<p style="font-size:24px;font-weight:700;line-height:1.4;color:#6E0F1F;border-top:2px solid #E6D5D8;padding:20px 0px 0px 0px">Результат: красивый контент своими руками, без оператора и студии.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#6E0F1F;padding:40px 44px;border-radius:28px">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:32px;font-weight:700;color:#C98F99">08</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-transform:uppercase;color:#FBF8F6">Рост аудитории и коллаборации</h3>
+<ul style="font-size:24px;line-height:1.4;color:#F2DADD">
+<li>Инструменты, которые сейчас работают для быстрого набора лояльной, качественной аудитории</li>
+<li>Коллаборации с блогерами: с кем сотрудничать и как договариваться</li>
+<li>Работа с брендами: как стать интересной для рекламодателей</li>
+</ul>
+<p style="font-size:24px;font-weight:700;line-height:1.4;color:#FBF8F6;border-top:2px solid #8E3442;padding:20px 0px 0px 0px">Результат: аудитория растёт не случайно, а по плану.</p>
+</div>
+</div>
+</section>
+<section class="slide" id="program-5" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:end">
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:96px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">Программа</h2>
+<p style="font-size:28px;font-weight:700;color:#6E5157">9 модулей · 20 уроков · 5/5</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:3;display:flex;flex-direction:column;gap:20px;background:#FFFDFC;padding:40px 44px;border-radius:28px;border:3px solid #6E0F1F">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:32px;font-weight:700;color:#B98A92">09</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:48px;font-weight:700;line-height:1.1;text-transform:uppercase;color:#6E0F1F">Монетизация, профессии и продажи</h3>
+<ul style="font-size:24px;line-height:1.4;color:#6E5157">
+<li>Все виды заработка в Instagram: реклама, свои продукты, услуги, коллаборации</li>
+<li>Профессии: СММ, мобилограф, контент-мейкер, рилсмейкер. Где брать клиентов и как поднять чек</li>
+<li>Продажи через блог: сторис, переписки и путь клиента от подписки до оплаты</li>
+<li>Как продвигать товарный бизнес через личный блог</li>
+</ul>
+<p style="font-size:24px;font-weight:700;line-height:1.4;color:#6E0F1F;border-top:2px solid #E6D5D8;padding:20px 0px 0px 0px">Результат: понятная модель заработка на твоём блоге и навыках.</p>
+</div>
+<div style="flex:2;display:flex;flex-direction:column;justify-content:center;gap:16px;background:#6E0F1F;padding:48px;border-radius:28px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:60px;line-height:1.1;color:#F2DADD">Всё, что изучаем,</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:72px;font-weight:700;line-height:1.05;text-transform:uppercase;color:#FBF8F6">сразу практикуем</h3>
+<p style="font-size:28px;line-height:1.4;color:#F2DADD">20 уроков теории, которая сразу становится твоим контентом</p>
+</div>
+</div>
+</section>
+<section class="slide" id="speakers-1" data-transition="fade" style="background:#6E0F1F;color:#FBF8F6;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:64px;line-height:1;color:#F2DADD">Спикеры</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:72px;font-weight:700;line-height:1.05;text-transform:uppercase">С тобой работают эксперты нашего рынка</h2>
+<p style="font-size:28px;line-height:1.4;width:1500px;color:#F2DADD">Каждая из них сама прошла путь, о котором рассказывает: от первых шагов до реальных денег и громких проектов. Только опыт, проверенный на нашем рынке.</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:1;display:flex;flex-direction:row;gap:32px;background:#FBF8F6;padding:32px;border-radius:28px">
+<img alt="Фото: Калзат" style="width:220px;height:300px;object-fit:cover;background:#EBDDDF;border:2px dashed #B98A92;border-radius:20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:40px;line-height:1.1;color:#6E0F1F">Залетающие рилсы</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:52px;font-weight:700;line-height:1;text-transform:uppercase;color:#2A0A10">Калзат</h3>
+<p style="font-size:24px;line-height:1.45;color:#6E5157">Маркетолог, 7 лет на рынке. Делает продающие рилсы для товарного бизнеса с огромными охватами. Расскажет, как делать залетающие рилсы.</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:row;gap:32px;background:#FBF8F6;padding:32px;border-radius:28px">
+<img alt="Фото: Альбина" style="width:220px;height:300px;object-fit:cover;background:#EBDDDF;border:2px dashed #B98A92;border-radius:20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:10px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:40px;line-height:1.1;color:#6E0F1F">Стратегический маркетинг</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:52px;font-weight:700;line-height:1;text-transform:uppercase;color:#2A0A10">Альбина</h3>
+<p style="font-size:24px;line-height:1.45;color:#6E5157">Маркетолог в кино, 6 лет на рынке. Продвигает фильмы, сама снималась, продвигала крупные компании. Расскажет о стратегическом маркетинге и своих фишках.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide" id="speakers-2" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFDFC;padding:28px;border-radius:28px;border:3px solid #6E0F1F">
+<img alt="Фото: Сезим, видеограф" style="width:476px;height:280px;object-fit:cover;background:#EBDDDF;border:2px dashed #B98A92;border-radius:20px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:40px;line-height:1.1;color:#6E0F1F">Видеограф</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:52px;font-weight:700;line-height:1;text-transform:uppercase">Сезим</h3>
+<p style="font-size:24px;line-height:1.45;color:#6E5157">Менеджер по блогерам в кино, моушн-дизайнер и монтажёр. Расскажет, с какими блогерами сотрудничать и на что делать упор.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#6E0F1F;padding:28px;border-radius:28px">
+<img alt="Фото: Сезим, маркетолог" style="width:476px;height:280px;object-fit:cover;background:#8E3442;border:2px dashed #C98F99;border-radius:20px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:40px;line-height:1.1;color:#F2DADD">Маркетолог</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:52px;font-weight:700;line-height:1;text-transform:uppercase;color:#FBF8F6">Сезим</h3>
+<p style="font-size:24px;line-height:1.45;color:#F2DADD">На рынке с 2019 года, владелица магазина одежды и магазина постельного белья.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFDFC;padding:28px;border-radius:28px;border:3px solid #6E0F1F">
+<img alt="Фото: BAGA" style="width:476px;height:280px;object-fit:cover;background:#EBDDDF;border:2px dashed #B98A92;border-radius:20px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:40px;line-height:1.1;color:#6E0F1F">ИИ-видео</p>
+<h3 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:52px;font-weight:700;line-height:1;text-transform:uppercase">BAGA</h3>
+<p style="font-size:24px;line-height:1.45;color:#6E5157">Создание видео с помощью искусственного интеллекта.</p>
+</div>
+</div>
+<p style="font-size:28px;font-weight:600;line-height:1.4;color:#6E0F1F">А ещё вдохновляющие личности, которые расскажут свой путь и поделятся лайфхаками. Гости будут добавляться по ходу обучения.</p>
+</section>
+<section class="slide" id="gifts" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between;gap:36px">
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:72px;line-height:1;color:#2A0A10">Подарки героиням</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:88px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">Входит в стоимость обучения</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2, 1fr);gap:22px 56px">
+<div style="display:flex;flex-direction:row;gap:20px;align-items:start"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p style="font-size:28px;line-height:1.35"><b>Личная фотосессия с Индирой:</b> стрит, студия и другие форматы</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;align-items:start"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p style="font-size:28px;line-height:1.35"><b>Бьюти-съёмка с Мединой:</b> макияж, причёска и съёмка</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;align-items:start"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p style="font-size:28px;line-height:1.35"><b>Мастер-класс по танцам от Байэля:</b> женская энергия и свобода в теле</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;align-items:start"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p style="font-size:28px;line-height:1.35"><b>Трансформационная игра «Главный герой»</b> с психологом Айдой</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;align-items:start"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p style="font-size:28px;line-height:1.35"><b>Выездные съёмки:</b> отдыхаем на красивых локациях и уезжаем с готовым контентом</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;align-items:start"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><p style="font-size:28px;line-height:1.35"><b>Коллаборации с брендами</b> косметики, одежды и не только, прямо на обучении</p></div>
+<div style="display:flex;flex-direction:row;gap:20px;align-items:start"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#6E0F1F" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6L12 16.8 6.6 19.6l1.1-6L3.2 9.4l6.1-.8z"/></svg><p style="font-size:28px;line-height:1.35"><b>+ секретный подарок,</b> о котором узнаете на старте</p></div>
+</div>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center;background:#6E0F1F;padding:36px 52px;border-radius:28px">
+<p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:64px;font-weight:700;line-height:1;text-transform:uppercase;color:#FBF8F6">Более 30 000 сом</p>
+<p style="font-size:28px;font-weight:600;line-height:1.35;color:#F2DADD;width:560px;text-align:right">подарков уже внутри обучения</p>
+</div>
+</section>
+<section class="slide" id="result" data-transition="fade" style="background:#6E0F1F;color:#FBF8F6;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:64px;line-height:1;color:#F2DADD">Результат</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:88px;font-weight:700;line-height:1;text-transform:uppercase">Что у тебя будет через месяц</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4, 1fr);gap:24px">
+<div style="display:flex;flex-direction:column;background:#FBF8F6;padding:32px;border-radius:24px"><p style="font-size:28px;font-weight:600;line-height:1.35;color:#2A0A10">Свой уникальный образ и позиционирование</p></div>
+<div style="display:flex;flex-direction:column;background:#FBF8F6;padding:32px;border-radius:24px"><p style="font-size:28px;font-weight:600;line-height:1.35;color:#2A0A10">Упакованный профиль, на который хочется подписаться</p></div>
+<div style="display:flex;flex-direction:column;background:#FBF8F6;padding:32px;border-radius:24px"><p style="font-size:28px;font-weight:600;line-height:1.35;color:#2A0A10">Контент-система и готовый контент с фото- и бьюти-съёмки</p></div>
+<div style="display:flex;flex-direction:column;background:#FBF8F6;padding:32px;border-radius:24px"><p style="font-size:28px;font-weight:600;line-height:1.35;color:#2A0A10">Уверенность в кадре и в своём теле</p></div>
+<div style="display:flex;flex-direction:column;background:#FBF8F6;padding:32px;border-radius:24px"><p style="font-size:28px;font-weight:600;line-height:1.35;color:#2A0A10">Первые коллаборации с брендами</p></div>
+<div style="display:flex;flex-direction:column;background:#FBF8F6;padding:32px;border-radius:24px"><p style="font-size:28px;font-weight:600;line-height:1.35;color:#2A0A10">Понятный путь к деньгам в выбранном треке</p></div>
+<div style="display:flex;flex-direction:column;background:#FBF8F6;padding:32px;border-radius:24px"><p style="font-size:28px;font-weight:600;line-height:1.35;color:#2A0A10">Окружение девушек, которые растут вместе с тобой</p></div>
+<div style="display:flex;flex-direction:column;justify-content:center;padding:32px;border-radius:24px;border:3px solid #F2DADD"><p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:44px;line-height:1.15;color:#FBF8F6">И главная роль в своей жизни</p></div>
+</div>
+</section>
+<section class="slide" id="format" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:space-between">
+<div style="display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:72px;line-height:1;color:#2A0A10">Формат</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:96px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">Офлайн, месяц практики</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:48px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-top:4px solid #6E0F1F;padding:28px 0px 0px 0px"><p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:150px;font-weight:700;line-height:1;color:#6E0F1F">1</p><p style="font-size:30px;font-weight:600;color:#6E5157">месяц</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-top:4px solid #6E0F1F;padding:28px 0px 0px 0px"><p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:150px;font-weight:700;line-height:1;color:#6E0F1F">20</p><p style="font-size:30px;font-weight:600;color:#6E5157">уроков</p></div>
+<div style="flex:2;display:flex;flex-direction:column;gap:8px;border-top:4px solid #6E0F1F;padding:28px 0px 0px 0px"><p style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:150px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">17 октября</p><p style="font-size:30px;font-weight:600;color:#6E5157">старт</p></div>
+</div>
+<div style="display:flex;flex-direction:row;gap:16px">
+<p style="font-size:28px;font-weight:700;background:#6E0F1F;color:#FBF8F6;padding:14px 32px;border-radius:999px">Офлайн</p>
+<p style="font-size:28px;font-weight:700;background:#6E0F1F;color:#FBF8F6;padding:14px 32px;border-radius:999px">Расписание подбираем под учениц</p>
+<p style="font-size:28px;font-weight:700;color:#6E0F1F;border:3px solid #6E0F1F;padding:11px 29px;border-radius:999px">Количество мест ограничено</p>
+</div>
+</section>
+<section class="slide" id="price" data-transition="fade" style="background:#6E0F1F;color:#FBF8F6;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:32px">
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:80px;line-height:1;text-align:center;color:#F2DADD">Стоимость обучения</p>
+<h1 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:260px;font-weight:700;line-height:1;text-align:center;text-transform:uppercase;color:#FBF8F6">100 000 сом</h1>
+<p style="font-size:36px;font-weight:600;background:#FBF8F6;color:#6E0F1F;padding:18px 44px;border-radius:999px">Включая подарки на сумму более 30 000 сом</p>
+</section>
+<section class="slide" id="mission" data-transition="fade" style="background:#FBF8F6;color:#2A0A10;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:28px">
+<img alt="Фото Куттубубу" style="position:absolute;left:1260px;top:128px;width:532px;height:824px;object-fit:cover;background:#EBDDDF;border:2px dashed #B98A92;border-radius:28px">
+<p style="position:absolute;left:1260px;top:520px;width:532px;font-size:26px;text-align:center;color:#8A6A70">[Фото Куттубубу]</p>
+<h2 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:96px;font-weight:700;line-height:1;text-transform:uppercase;color:#6E0F1F">Моя миссия</h2>
+<p style="font-size:30px;line-height:1.5;width:1040px">Я хочу, чтобы каждая девушка жила жизнью своей мечты. Не пряталась, не ждала «подходящего момента», не боялась чужого мнения.</p>
+<p style="font-size:30px;line-height:1.5;width:1040px">Я знаю, каково это — хотеть проявляться и бояться. И я знаю, какая свобода приходит, когда ты наконец выходишь в свет и выдерживаешь любое внимание.</p>
+<p style="font-size:30px;line-height:1.5;width:1040px">Я верю, что девушки Кыргызстана могут свободно заявлять о себе и выходить на мировой уровень.</p>
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:72px;line-height:1.1;color:#6E0F1F">Девочки, давайте расти вместе</p>
+</section>
+<section class="slide" id="final" data-transition="fade" style="background:#6E0F1F;color:#FBF8F6;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:36px">
+<img alt="Фото Куттубубу без фона" style="position:absolute;left:1220px;top:150px;width:580px;height:930px;object-fit:cover;background:#8E3442;border:2px dashed #C98F99">
+<p style="position:absolute;left:1220px;top:580px;width:580px;font-size:26px;text-align:center;color:#F2DADD">[Фото Куттубубу без фона]</p>
+<h1 style="font-family:'Oswald', 'Arial Narrow', sans-serif;font-size:150px;font-weight:700;line-height:0.95;text-transform:uppercase;width:1040px">7 девушек<br>уже с нами</h1>
+<p style="font-size:40px;font-weight:600;line-height:1.3;color:#F2DADD">Старт 17 октября. Присоединяйся.</p>
+<p style="font-family:'Marck Script', 'Brush Script MT', cursive;font-size:80px;line-height:1.1;width:1040px">Твоя главная роль начинается сейчас</p>
+<div style="display:flex;flex-direction:row">
+<p style="font-size:32px;font-weight:700;background:#FBF8F6;color:#6E0F1F;padding:16px 40px;border-radius:999px">Instagram: @kuttububu</p>
+</div>
+</section>
+</div>
+<div id="bar"><button id="prev" aria-label="Назад">‹</button><span id="num"></span><button id="next" aria-label="Вперёд">›</button><button id="fs" aria-label="Во весь экран">⛶</button></div>
+<script>
+(function(){
+ var s=[].slice.call(document.querySelectorAll('.slide')),i=0,st=document.getElementById('stage'),n=document.getElementById('num');
+ function fit(){var k=Math.min(innerWidth/1920,innerHeight/1080);st.style.transform='translate(-50%,-50%) scale('+k+')';}
+ function go(j){i=Math.max(0,Math.min(s.length-1,j));s.forEach(function(e,x){e.classList.toggle('on',x===i)});n.textContent=(i+1)+' / '+s.length;history.replaceState(null,'','#'+(i+1));}
+ addEventListener('resize',fit);fit();
+ var h=parseInt(location.hash.slice(1),10);go(h?h-1:0);
+ addEventListener('keydown',function(e){
+  if(['ArrowRight','ArrowDown','PageDown',' ','Enter'].indexOf(e.key)>-1){e.preventDefault();go(i+1)}
+  else if(['ArrowLeft','ArrowUp','PageUp','Backspace'].indexOf(e.key)>-1){e.preventDefault();go(i-1)}
+  else if(e.key==='Home')go(0); else if(e.key==='End')go(s.length-1);
+  else if(e.key==='f'||e.key==='F')full();
+ });
+ st.addEventListener('click',function(e){go(e.clientX>innerWidth/2?i+1:i-1)});
+ var x0=null;addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+ addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(dx<0?i+1:i-1);x0=null});
+ function full(){if(document.fullscreenElement)document.exitFullscreen();else document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen();}
+ document.getElementById('prev').onclick=function(e){e.stopPropagation();go(i-1)};
+ document.getElementById('next').onclick=function(e){e.stopPropagation();go(i+1)};
+ document.getElementById('fs').onclick=function(e){e.stopPropagation();full()};
+})();
+</script>
+</body>
+</html>
