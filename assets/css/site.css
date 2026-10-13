@@ -96,7 +96,7 @@ b{font-weight:700}
 .grid-4{grid-template-columns:1fr}
 @media (min-width:600px){.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:1024px){.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media (min-width:600px){.grid-4 .pain--note{grid-column:span 2}}
+@media (min-width:600px){.grid-4 .pain--note,.grid-4 .who--wide{grid-column:span 2}}
 
 /* ---------- Фото ---------- */
 .photo{position:relative;overflow:hidden;border-radius:var(--r);background:var(--ph);border:2px dashed var(--num)}
