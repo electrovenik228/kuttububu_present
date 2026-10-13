@@ -214,6 +214,8 @@ b{font-weight:700}
 .speaker .script{font-size:clamp(26px,2.4vw,38px);color:var(--bordo)!important}
 .speaker .h3{font-size:clamp(28px,2.8vw,44px);line-height:1}
 .speaker p:last-child{color:var(--muted);line-height:1.45}
+.speaker p.speaker__now{margin-top:6px;padding-top:14px;border-top:2px solid var(--line);color:var(--ink);line-height:1.45}
+.speaker__now b{display:block;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--bordo);margin-bottom:4px}
 .speakers-note{margin-top:var(--head-gap);font-weight:600;font-size:var(--fs-lead);line-height:1.4;max-width:62ch}
 @media (min-width:600px){
  .speakers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible;margin-inline:0;padding:0}
@@ -285,12 +287,19 @@ b{font-weight:700}
 .doors{display:grid;gap:var(--gap);grid-template-columns:1fr}
 @media (min-width:900px){.doors{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .door{display:flex;flex-direction:column;gap:clamp(14px,1.6vw,24px)}
-.door .script{font-size:clamp(32px,3.2vw,52px)}
-.door.card--milk .script{color:var(--bordo)}
+#doors .head .script{font-size:clamp(28px,3vw,52px);line-height:1.1}
+.door .h3{font-size:clamp(28px,2.6vw,44px);color:var(--bordo)}
+.door--dark{background:var(--ink)}
+.door--dark .h3{color:var(--milk)}
+.door--dark ul{color:var(--rose)}
+.door.card--milk ul{color:var(--ink);font-weight:500}
 .door ul{list-style:none;padding:0;font-weight:600;font-size:clamp(17px,1.5vw,22px);line-height:1.35}
 .door li{position:relative;padding-left:1.3em;margin-bottom:.7em}
 .door li::before{content:"";position:absolute;left:0;top:.42em;width:.55em;height:.55em;border-radius:50%;background:currentColor;opacity:.45}
 .doors-note{margin-top:var(--head-gap);font-weight:600;font-size:var(--fs-lead);line-height:1.4;max-width:52ch}
+.doors-note--line{display:flex;flex-direction:column;gap:6px;border-left:6px solid var(--rose);padding-left:clamp(18px,2vw,36px);max-width:none}
+.doors-note--line p:first-child{font-weight:700}
+.doors-note--line .soft{font-weight:400}
 
 /* ---------- Знакомство: что пройдём ---------- */
 .outline{list-style:none;padding:0;display:grid;gap:var(--gap);grid-template-columns:1fr;counter-reset:none}
@@ -299,14 +308,18 @@ b{font-weight:700}
 .outline li{display:flex;align-items:center;gap:clamp(14px,1.4vw,20px);margin:0;padding:clamp(18px,1.8vw,28px);border-radius:var(--r-sm)}
 .outline .module__n{flex:none;color:var(--num)}
 .outline .h3{color:var(--bordo);font-size:clamp(19px,1.7vw,26px)}
+.outline .card--bordo .module__n{color:var(--num-dark)}
+.outline .card--bordo .h3{color:var(--milk)}
 .outline-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--gap);margin-top:var(--head-gap)}
 .outline-foot p{font-weight:600;font-size:var(--fs-lead);line-height:1.4;max-width:46ch}
 
 /* ---------- Знакомство: наставничество ---------- */
 .mentor{display:grid;gap:var(--gap);grid-template-columns:1fr}
 @media (min-width:768px){.mentor{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.mentor .card{display:flex;flex-direction:column;gap:10px}
-.mentor .num{color:var(--bordo);font-size:clamp(64px,8vw,128px)}
+.mentor .card{display:flex;align-items:center;gap:clamp(18px,2.4vw,32px)}
+.mentor .card > div{display:flex;flex-direction:column;gap:8px;min-width:0}
+.mentor .num{flex:none;color:var(--bordo);font-size:clamp(56px,7vw,128px)}
+.mentor-note{margin-top:var(--head-gap);color:var(--milk)!important;font-size:clamp(28px,3vw,52px);line-height:1.1}
 .mentor .h3{color:var(--bordo)}
 .mentor p:last-child{color:var(--muted)}
 
